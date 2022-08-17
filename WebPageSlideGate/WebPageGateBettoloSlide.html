@@ -7,6 +7,17 @@ body {
   margin: 0;
 }
 
+/* Bottom */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(129, 21, 21);
+  color: white;
+  width: 100%;
+  height: auto;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -80,6 +91,14 @@ img {
   height: 80%;
 }
 
+/* hider */
+
+.hider{
+
+  display: none;
+
+}
+
 /* Image style*/
 
 .slidestyle{
@@ -116,69 +135,18 @@ img {
 <div class="caption-container" style="width:100%">
   <h2 style="text-align:center" style="width:100%">Benvenuti al Terminal Bettolo</h2>
 </div>
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src=".\Media\img1.jpg" class="slidestyle">
-  </div>
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src=".\Media\img2.jpg" class="slidestyle">
+<div>
+  </object>
+  <div>
+    <embed src=".//error1.pdf" width="100%" height="2100px" />
   </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src=".\Media\img3.jpg" class="slidestyle">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src=".\Media\img4.jpg" class="slidestyle">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src=".\Media\img5.jpg" class="slidestyle">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src=".\Media\img6.jpg" class="slidestyle">
-  </div>
-    
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <!--<div class="caption-container">
-    <p id="caption"></p>
-  </div> -->
-  <div class="caption-container" style="width:100%">
+  <div class="bottom" style="width:100%">
     <p id="text1" style="width:100%">Giorni senza Infortuni:</p>
     <p id="casualties" style="width:100%">1</p>
   </div>
-
-  <!--<div class="row">
-    <div class="column">
-      <img class="demo cursor" src=".\Media\img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="img1">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src=".\Media\img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="img2">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src=".\Media\img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="img3">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src=".\Media\img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="img4">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src=".\Media\img5.jpg" style="width:100%" onclick="currentSlide(5)" alt="img5">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src=".\Media\img6.jpg" style="width:100%" onclick="currentSlide(6)" alt="img6">
-    </div>-->
-  </div>
-  
 </div>
 
 <script>
@@ -189,7 +157,7 @@ casualtyshower(castualties);
 
 const interval = setInterval(function() {
   plusSlides(+1)
- }, 5000);
+ }, 1000);
 
 const castualtiescounter = setInterval(function() {
   casualtyshower(+1)
